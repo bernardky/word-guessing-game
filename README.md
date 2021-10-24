@@ -1,1 +1,1 @@
-# Word guessing game built with Vite, Vue, and TailwindCSS.
+Word guessing game built with Vite, Vue, and TailwindCSS.
