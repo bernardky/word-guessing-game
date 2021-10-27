@@ -4,7 +4,7 @@
       <h1 class="text-2xl">Try to guess the secret word.</h1>
       <button
         v-if="!gameStarted"
-        class="text-4xl border-b-2 font-semibold pt-6"
+        class="text-4xl border-b-2 font-semibold pt-6 border-solid"
         @click="startGame()"
       >
         Start
@@ -15,7 +15,7 @@
       <p class="p-6" v-if="!hasLost">Enter a letter:</p>
       <input
         v-if="!hasLost"
-        class="bg-gray-700 border-gray-500 border-2 text-center"
+        class="bg-gray-700 border-gray-500 border-2 text-center border-solid"
         type="text"
         v-model="currentGuess"
         @keyup.enter="submitGuess()"
@@ -51,12 +51,16 @@
 
     <div v-if="hasWon">
       <p class="text-green-500">{{ message }}</p>
-      <button class="border-b-2 pt-4" @click="restart">Back</button>
+      <button class="border-b-2 pt-4 border-solid" @click="restart">
+        Back
+      </button>
     </div>
 
     <div v-if="hasLost">
       <p class="text-red-400">{{ message }}</p>
-      <button class="border-b-2 pt-4" @click="restart">Back</button>
+      <button class="border-b-2 pt-4 border-solid" @click="restart">
+        Back
+      </button>
     </div>
   </div>
 </template>
