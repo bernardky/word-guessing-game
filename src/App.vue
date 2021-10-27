@@ -35,7 +35,7 @@
       </div>
       <div class="flex justify-center">
         <div
-          class="p-2 border-t-2 m-3 w-8"
+          class="p-2 border-t-2 m-3 w-8 border-solid"
           v-for="(letter, index) in randomWord"
           :key="index"
         ></div>
